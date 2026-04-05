@@ -9,7 +9,7 @@ use thiserror::Error;
 use crate::types::SpriteFusionMap;
 
 /// Asset loader for SpriteFusion JSON map files.
-#[derive(Default)]
+#[derive(Default, Reflect)]
 pub struct SpriteFusionMapLoader;
 
 /// Errors that can occur when loading a SpriteFusion map.

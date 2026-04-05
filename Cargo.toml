@@ -1,6 +1,6 @@
 [package]
 name = "bevy_spritefusion"
-version = "0.1.0"
+version = "0.2.0"
 edition = "2021"
 license = "MIT"
 description = "A Bevy plugin for loading Sprite Fusion tilemap exports"
@@ -9,14 +9,14 @@ keywords = ["bevy", "tilemap", "spritefusion", "gamedev", "2d"]
 categories = ["game-development", "graphics", "rendering"]
 
 [dependencies]
-bevy = { version = "0.17", default-features = false, features = ["bevy_asset", "bevy_render", "bevy_sprite"] }
-bevy_ecs_tilemap = "0.17"
+bevy = { version = "0.18", default-features = false, features = ["bevy_asset", "bevy_render", "bevy_sprite"] }
+bevy_ecs_tilemap = "0.18"
 serde = { version = "1.0", features = ["derive"] }
 serde_json = "1.0"
 thiserror = "2.0"
 
 [dev-dependencies]
-bevy = { version = "0.17", default-features = true }
+bevy = { version = "0.18", default-features = true }
 
 [[example]]
 name = "basic"
